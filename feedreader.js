@@ -71,6 +71,7 @@ describe('Initial Entries', function() {
          it('ensures loadFeed is called and there is at least a single .entry element within the .feed container.', function(done) {
              expect( $('.feed').length ).toBeGreaterThan(0);
             });
+    done();
      
 /*TODO: Write a new test suite named "New Feed Selection"
 describe('New Feed Selection', function() {*/
@@ -101,23 +102,6 @@ describe('New Feed Selection', function() {*/
 
      }; */    
    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
