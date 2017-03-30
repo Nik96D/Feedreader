@@ -66,28 +66,27 @@ describe('The menu', function() {
 
 describe('Initial Entries', function() {
         beforeEach(function (done) {
-            loadFeed(0/*make it 1 */, done);
+            loadFeed(0, done);
        });
          it('ensures loadFeed is called and there is at least a single .entry element within the .feed container.', function(done) {
              expect( $('.feed').length ).toBeGreaterThan(0);
+             done();
             });
-    done();
+    
      
-/*TODO: Write a new test suite named "New Feed Selection"
-describe('New Feed Selection', function() {*/
+//TODO: Write a new test suite named "New Feed Selection"
+describe('New Feed Selection', function() {
          /*TODO: Write a test that ensures when a new feed is loaded
          by the loadFeed function that the content actually changes.
           Remember, loadFeed() is asynchronous.*/
-        
-  /*      var oldFeed;
-
         resetFeed(function(done) {
-            
+            var oldFeed;
             loadFeed(0, function(){
                 oldFeed = $('.feed .entry > h2').first().text();
             done();
             });
         });
+        
 
         beforeEach(function(done) {
             loadFeed(2, done);
@@ -100,10 +99,10 @@ describe('New Feed Selection', function() {*/
         expect( newFeed ).not.toBe( oldFeed );
      
 
-     }; */    
+     });    
    });
 
 
 
-
+});
 }());
